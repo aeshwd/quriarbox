@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.preloader .fade-out{
+    opacity: 0;
+    transition: opacity 4s ease;
+}
+
+
+
+/* Navbar */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-family: sans-serif;
+    background-color: white;
+    overflow: hidden;
+}
+
+.logo{
+    padding-left: 40px;
+}
+
+.links ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+.links ul a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.links ul a:hover{
+    color:  rgb(234, 24, 24);
+}
+
+.links ul li{
+    list-style: none;
+}
+
+.links button{
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(234, 24, 24);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.links button:hover{
+    background-color: brown;
+    transform: scale(1.2);
+}
+
+
+/* Hero Section */
+
+.hero{
+    display: flex;
+    overflow: hidden;
+    margin: 30px 40px;
+    justify-content: space-between;
+}
+
+.hero .hero-left{
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.hero-left .trusted{
+    font-size: 2.5rem;
+}
+
+.hero-left .service{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-left p{
+    font-size: 1.4rem;
+    margin-right: 100px;
+}
+
+.hero-left .started{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(234, 24, 24);
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.hero-left .started:hover{
+    background-color: brown;
+}
+
+.hero img{
+    width: 700px;
+}
+
+/* Service Section */
+
+.service-container{
+    background-color: rgb(239, 221, 200);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.ser{
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(234, 24, 24);
+    font-weight: 700;
+}
+
+.you{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.service-boxes{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px 40px;
+    overflow: hidden;
+}
+
+.box{
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box p{
+    font-weight: 700;
+}
+
+.box .text{
+    font-weight: normal;
+    color: gray;
+}
+
+
+.box ul li{
+    text-align: start;
+    color: gray;
+}
+
+.box button{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(234, 24, 24);
+    border-radius: 4px;
+    transition: 0.4s ease-in-out;
+}
+
+.box button:hover{
+    background-color: brown;
+}
+
+.box img{
+    width: 150px;
+}
+
+/* Specification Boxes */
+
+.specification-boxes{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px 40px;
+    overflow: hidden;
+}
+
+.bo{
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.bo img{
+    width: 70px;
+}
+
+.bo-text h2{
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 700;
+    color: rgb(234, 24, 24);
+}
+
+.bo-text p{
+    font-weight: 700;
+    font-family:sans-serif;
+}
+
+/* Video Section */
+
+.video{
+    text-align: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+
+/* Call */
+
+.request{
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(234, 24, 24);
+    font-weight: 700;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.contact{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Form */
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 50px;
+    overflow: hidden;
+}
+
+.form-container{
+    border: 2px solid rgb(234, 24, 24);
+    padding: 10px;
+}
+
+.form-container input{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form-container textarea{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container button{
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(234, 24, 24);
+    transition: 0.4s ease-in-out;
+}
+
+.form-container button:hover{
+    background-color: brown;
+}
+
+/* Find Section */
+
+.find-container{
+    background-color: pink;
+    overflow: hidden;
+}
+.find{
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(234, 24, 24);
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.call{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.contact-form{
+    border: 5px solid rgb(234, 24, 24);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-form .logo{
+    text-align: start;
+}
+
+.contact-form i{
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.phone a{
+    text-decoration: none;
+}
+
+.phone button{
+    display: block;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(234, 24, 24);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.phone button:hover{
+    background-color: brown;
+}
+
+.phone button i{
+    font-size: 1.5rem;
+}
+
+/* Footer Section */
+
+.foot-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 50px;
+    gap: 10px;
+    background-color: rgb(70, 67, 67);
+    overflow: hidden;
+}
+
+.foot{
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.foot .ul{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+.foot p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: rgb(157, 152, 152);
+}
+
+.foot ul a{
+    text-decoration: none;
+}
+
+.foot ul li{
+    list-style: none;
+   margin-bottom: 10px;
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 1.1rem;
+   color: rgb(157, 152, 152);
+}
+
+/* Sub-Footer */
+
+.sub-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(28, 26, 26);
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 865px) {
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-left .trusted{
+        font-size: 1.7rem;
+    }
+    
+    .hero-left .service{
+        font-size: 1.8rem;
+    }
+    
+    .hero-left p{
+        font-size: 1rem;
+    }
+    
+    .hero-left .started{
+        font-size: 1rem;
+    }
+
+     .hero img{
+        width: 500px;
+     }
+
+
+    
+    /* Service Section */
+    
+    .service-boxes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 715px) {
+    /* Navbar */
+
+.links ul{
+   display: none;
+}
+
+
+
+/* Form */
+
+.form{
+    flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 575px) {
+    
+    .hero-left .trusted{
+        font-size: 1.5rem;
+    }
+    
+    .hero-left .service{
+        font-size: 1.6rem;
+    }
+    
+    .hero-left p{
+        font-size: 0.8rem;
+    }
+    
+    .hero-left .started{
+        font-size: 0.8rem;
+    }
+
+     .hero img{
+        width: 300px;
+     }
+    
+    /* Specification Boxes */
+    
+    .specification-boxes{
+        gap: 10px;
+    }
+    
+    .bo{
+        width: 100px;
+    }
+    
+    .bo img{
+        width: 30px;
+    }
+    
+    .bo-text h2{
+        font-size: 1rem;
+    }
+    
+    .bo-text p{
+        font-size: 0.8rem;
+    }
+    
+    /* Video Section */
+
+    .vid{
+        width: 300px;
+        height: 170px;
+    }
+    
+    /* Find Section */
+    
+    .contact-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 20px;
+    }
+    
+    .contact-form h2{
+       font-size: 1rem;
+    }
+    
+    .contact-form .logo{
+        font-size: 0.7rem;
+    }
+    
+    .contact-form i{
+        font-size: 0.8rem;
+    }
+    
+    .phone a{
+        font-size: 1rem;
+    }
+    
+    .phone button{
+        font-size: 0.8rem;
+    }
+    
+    .phone button i{
+       font-size: 0.9rem;
+    }
+    
+    /* Footer Section */
+    
+    .foot-boxes{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 458px) {
+   .specification-boxes{
+    flex-wrap: wrap;
+   }
+
+   .hero-left p{
+   margin-right: 30px;
+}
+
+.hero img{
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Call */
+
+.contact{
+   font-size: 1rem;
+}
+
+/* Form */
+
+.form{
+    padding: 30px 20px;
+}
+
+.form-left img{
+    width: 200px;
+}
+
+.contact-container{
+    align-items: flex-start;
+}
+
+.contact-form{
+   padding: 10px 5px;
+}
+
+.logo{
+    padding: 0px 0px 0px 10px;
+}
+
+.rights{
+   font-size: 0.7rem;
+}
+
+.made{
+   font-size: 0.7rem;
+}
+
+
+
+}
